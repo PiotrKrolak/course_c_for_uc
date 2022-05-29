@@ -2,15 +2,23 @@
 
 #include <stdio.h>
 
-#define flaga "abc"
+#define flaga1
+// #define flaga2
 
-// #if defined flaga
-//     #define kolor "czerwoni"
-// #else   
-//     #define kolor "niebiescy"
+#ifdef flag1
+    #define kolor "czerwony"
+#else   
+    #define kolor "niebieski"
+#endif
+
+#ifdef flag2
+    #define figura " pionek"
+#else   
+    #define figura " goniec"
+#endif
 
 int main(){
-    printf(flaga);
+    printf(kolor figura);
 
     return 0;
 }
