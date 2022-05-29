@@ -1,11 +1,12 @@
 #include <stdio.h>
 
 #define kwadrat(x) (x)*(x)
-
-int a = 2;
+#define liczba 2
+#define slowo "zdefiniowane slowo"
 
 int main(){
-    printf("%d", kwadrat(a));
+    printf("%d \n", kwadrat(liczba));
+    printf(slowo);
 
     return 0;
 }
